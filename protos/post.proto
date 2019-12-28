@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package post;
+
+service PostService {
+  rpc ListPost (ListPostRequest) returns (ListPostResponse) {};
+  rpc ShowPost (showPostRequest) returns (showPostResponse) {};
+  // rpc CreatePost () returns () {};
+  // rpc UpdatePost () returns () {};
+}
+message Post {
+  int32 id = 1;
+  string title = 2;
+  string content = 3;
+  int32 user_id = 4;
+}
+
+message ListPostRequest {}
+
+message ListPostResponse {
+  Post post = 1;
+}
+
+
+message showPostRequest {
+  string post_id = 1;
+}
+
+message showPostResponse {
+  Post post = 1;
+}

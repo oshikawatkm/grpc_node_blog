@@ -1,0 +1,23 @@
+{
+  "name": "grpc_node_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "google-protobuf": "^3.11.0",
+    "grpc": "^1.24.2",
+    "grpc-tools": "^1.8.0",
+    "mysql": "^2.17.1",
+    "mysql2": "^2.0.1",
+    "nodemon": "^2.0.1",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1"
+  }
+}
